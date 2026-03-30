@@ -14,6 +14,7 @@ Este portfólio reúne meus projetos, estudos e soluções que integram **Medici
 - **Formação sólida em Ciência de Dados e IA aplicada a negócios**: MBA em Inteligência Artificial para Negócios (Exame), graduação em Ciência de Dados (Uninove, EAD).  
 - **Foco em inovação e aprendizado contínuo**, transformando dados e tecnologia em soluções clínicas, educacionais e estratégicas.
 
+
 ## Tecnologias e Ferramentas
 
 - 🧠 **IA e Conteúdo Generativo**: ChatGPT, Gemini, Claude, Leonardo.AI, Midjourney, NightCafe, Adobe Firefly,entre outros
@@ -24,6 +25,7 @@ Este portfólio reúne meus projetos, estudos e soluções que integram **Medici
 - 💻 **Linguagens e Plataformas**: Python, SQL, Jupyter Notebooks, Git/GitHub  
 - 🧑‍💻 **Copilotos e Assistentes de IA**: GitHub Copilot, Claude, ChatGPT, Gemini, Leonardo.AI, Midjourney, NightCafe, entre outros
 
+
 ## Projetos Relevantes
 
 - **Aurora Tech – Shorts Educativos**: vídeos curtos sobre IA e Ciência de Dados, com foco em aprendizado rápido e engajamento.  
@@ -31,6 +33,7 @@ Este portfólio reúne meus projetos, estudos e soluções que integram **Medici
 - **Aurora Tech – Conteúdos de Python e IA**: cursos e materiais voltados para Python, Machine Learning e IA aplicada à Medicina Veterinária.  
 - **Aurora Tech – Projetos de Ciência de Dados**: exercícios, desafios e ferramentas práticas para treino de análise de dados, visualização e aprendizado de máquina.
 – **Aurora Tech – ChatBoot (Sigiloso)**: IA integrada, desenvolvendo automações, diagnósticos e suporte a workflows, com alto nível de confidencialidade.
+
 
 ## Contato
 
