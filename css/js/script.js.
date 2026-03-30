@@ -1,1 +1,10 @@
 
+// Captura o formulário e a mensagem de confirmação
+const form = document.getElementById('form-contato');
+const confirmacao = document.getElementById('confirmacao');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); // evita que a página recarregue
+    confirmacao.style.display = 'block'; // mostra mensagem de sucesso
+    form.reset(); // limpa os campos do formulário
+});
