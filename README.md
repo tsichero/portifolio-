@@ -17,7 +17,7 @@ Aqui você encontra meus projetos, estudos e soluções que unem **Medicina Vete
 ## Contato
 - Email: tata@email.com  
 - GitHub: [github.com/seu-usuario](https://github.com/tsichero  
-- Instagram: [instagram.com/seuusuario](https://instagram.com/tataiworld).
+- Instagram: [instagram.com/seuusuario](https://instagram.com/tataiworld)
 
 ---
 
