@@ -1,4 +1,11 @@
-index.html
-css/style.css
-js/script.js
-images/.gitkeep
+portfólio-tsichero/
+│
+├── index.html
+├── css/
+│   ├── style.css
+│   └── .gitkeep
+├── js/
+│   ├── script.js
+│   └── .gitkeep
+└── images/
+    └── .gitkeep
