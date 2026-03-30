@@ -1,5 +1,80 @@
-<!-- CSS -->
-<link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatá Sichero | Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <!-- MENU -->
+    <header>
+        <nav>
+            <div class="logo">Tatá Sichero</div>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- JS -->
-<script src="js/script.js"></script>
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre">
+        <h1>Olá! Eu sou a Tainã Sichero Dulcetti (Tatá)</h1>
+        <p>
+            Sou Médica Veterinária formada pela Faculdade Metropolitanas Unidas em 2019, com pós-graduação em Clínica Médica e Clínica Cirúrgica de pequenos animais pela Universidade de Santo Amaro, e experiência em atendimento domiciliar na Sou Animal.  
+            Atualmente, sou Especialista em Inteligência Artificial e estou cursando graduação em Ciência de Dados, além de um MBA em Inteligência Artificial para Negócios.  
+            Sou apaixonada por tecnologia, aprendizado de máquina, automação, insights estratégicos e inovação aplicada à Medicina Veterinária.
+        </p>
+    </section>
+
+    <!-- SEÇÃO PROJETOS -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto">
+                <h3>Sou Animal IA</h3>
+                <p>Plataforma de apoio para estudantes e veterinários, com bulário, protocolos clínicos, internações, anamnese e integração com inteligência artificial.</p>
+                <a href="#" target="_blank">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Portfólio Profissional</h3>
+                <p>Apresentação de projetos, estudos e soluções integradas de Veterinária e IA, focado em inovação e aplicação prática.</p>
+                <a href="#" target="_blank">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Conteúdo Educativo Vet</h3>
+                <p>Produção de conteúdo para Instagram e redes sociais, com foco em educação de tutores, alertas, curiosidades e dicas sobre saúde animal.</p>
+                <a href="#" target="_blank">Ver projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensagem-confirmacao" class="hidden">
+            <p>Obrigado! Sua mensagem foi enviada com sucesso.</p>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 Tatá Sichero. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
