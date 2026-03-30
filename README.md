@@ -1,1 +1,1 @@
-Portfólio da Tsicheo— Veterinária & Especialista em IA”.
+Portfólio da Tsichero— Veterinária & Especialista em IA”.
