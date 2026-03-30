@@ -1,11 +1,146 @@
-portfólio-tsichero/
-│
-├── index.html
-├── css/
-│   ├── style.css
-│   └── .gitkeep
-├── js/
-│   ├── script.js
-│   └── .gitkeep
-└── images/
-    └── .gitkeep
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tainã Sichero Dulcetti | Portfólio</title>
+    <style>
+        /* RESET */
+        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        body { background:#f4f4f9; color:#333; line-height:1.6; scroll-behavior:smooth; }
+
+        header { background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000; }
+
+        nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; max-width:1200px; margin:auto; }
+
+        nav .logo { font-size:1.6rem; font-weight:bold; color:#FF6600; cursor:pointer; }
+
+        nav ul.menu { list-style:none; display:flex; gap:2rem; }
+
+        nav ul.menu li a { text-decoration:none; color:#333; font-weight:500; transition:color 0.3s, transform 0.3s; }
+
+        nav ul.menu li a:hover { color:#FF6600; transform:scale(1.05); }
+
+        section { padding:5rem 2rem; max-width:1200px; margin:auto; }
+
+        section h1, section h2 { text-align:center; margin-bottom:2rem; color:#FF6600; }
+
+        section p { max-width:800px; margin:auto; text-align:center; font-size:1.1rem; }
+
+        .projetos-container { display:flex; flex-wrap:wrap; gap:2rem; justify-content:center; }
+
+        .projeto { background:#fff; padding:2rem; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.08); flex:1 1 280px; max-width:320px; text-align:center; transition:transform 0.3s, box-shadow 0.3s; }
+
+        .projeto:hover { transform:translateY(-5px); box-shadow:0 12px 25px rgba(0,0,0,0.15); }
+
+        .projeto h3 { margin-bottom:1rem; color:#FF6600; }
+
+        .projeto p { font-size:0.95rem; color:#555; }
+
+        .projeto a { display:inline-block; margin-top:1.5rem; text-decoration:none; background:#FF6600; color:#fff; padding:0.6rem 1.2rem; border-radius:8px; font-weight:bold; transition:background 0.3s, transform 0.3s; }
+
+        .projeto a:hover { background:#e65500; transform:scale(1.05); }
+
+        form { display:flex; flex-direction:column; gap:1.2rem; max-width:500px; margin:auto; }
+
+        input, textarea { padding:0.9rem; border:1px solid #ccc; border-radius:8px; font-size:1rem; width:100%; resize:none; transition:border-color 0.3s, box-shadow 0.3s; }
+
+        input:focus, textarea:focus { outline:none; border-color:#FF6600; box-shadow:0 0 8px rgba(255,102,0,0.3); }
+
+        button { padding:0.9rem; border:none; border-radius:8px; background:#FF6600; color:#fff; font-weight:bold; cursor:pointer; transition:background 0.3s, transform 0.2s; }
+
+        button:hover { background:#e65500; transform:scale(1.02); }
+
+        .hidden { display:none; }
+
+        #mensagem-confirmacao { margin-top:1rem; text-align:center; color:green; font-weight:bold; font-size:1.1rem; }
+
+        footer { text-align:center; padding:2rem; background:#fff; box-shadow:0 -2px 8px rgba(0,0,0,0.05); margin-top:4rem; font-size:0.95rem; }
+
+        @media(max-width:768px) { nav ul.menu { flex-direction:column; gap:1rem; } .projetos-container { flex-direction:column; align-items:center; } }
+    </style>
+</head>
+<body>
+    <!-- MENU -->
+    <header>
+        <nav>
+            <div class="logo">Tainã Sichero Dulcetti</div>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <h1>Olá! Eu sou Tainã Sichero Dulcetti</h1>
+        <p>
+            Sou Médica Veterinária, especialista em Inteligência Artificial e graduanda em Ciência de Dados.  
+            Também estou cursando MBA em Inteligência Artificial para Negócios.  
+            Apaixonada por tecnologia, automação e inovação aplicada à Medicina Veterinária.
+        </p>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto">
+                <h3>Projeto 1</h3>
+                <p>Em desenvolvimento e sob sigilo.</p>
+                <a href="#" target="_blank">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 2</h3>
+                <p>Em desenvolvimento e sob sigilo.</p>
+                <a href="#" target="_blank">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 3</h3>
+                <p>Em desenvolvimento e sob sigilo.</p>
+                <a href="#" target="_blank">Ver projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato" action="https://formspree.io/f/mmbjjs" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensagem-confirmacao" class="hidden">
+            <p>Obrigado! Sua mensagem foi enviada com sucesso.</p>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 Tainã Sichero Dulcetti. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('form-contato');
+        const mensagemConfirmacao = document.getElementById('mensagem-confirmacao');
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            mensagemConfirmacao.classList.remove('hidden');
+            form.reset();
+            setTimeout(() => mensagemConfirmacao.classList.add('hidden'), 5000);
+        });
+    </script>
+</body>
+</html>
