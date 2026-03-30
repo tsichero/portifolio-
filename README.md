@@ -1,1 +1,1 @@
-Portfólio da Tatá — Veterinária & Especialista em IA”.
+Portfólio da Tsicheo— Veterinária & Especialista em IA”.
