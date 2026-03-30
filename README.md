@@ -12,12 +12,12 @@ Aqui você encontra meus projetos, estudos e soluções que unem **Medicina Vete
 ## Projetos
 - **VET IA** – Simulador de exames veterinários para estudantes  
 - **Aurora Tech** – Shorts educativos sobre Inteligência Artificial e Ciência de Dados  
-- [Outros projetos futuros serão adicionados aqui]
+- [Outros projetos futuros serão adicionados aqui
 
 ## Contato
 - Email: tata@email.com  
 - GitHub: [github.com/seu-usuario](https://github.com/tsichero  
-- Instagram: [https://instagram.com/tataiworld]
+- Instagram: https://instagram.com/tataiworld
 
 ---
 
