@@ -1,69 +1,158 @@
-/* =========================
-   RESET E BASE
-========================= */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Poppins', sans-serif; background-color: #fdfdfd; color: #333; line-height: 1.6; }
-a { text-decoration: none; color: inherit; }
-button { cursor: pointer; }
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsichero | Portfólio</title>
+    <style>
+        /* =========================
+           RESET E BASE
+        ========================= */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #fdfdfd; color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
 
-/* =========================
-   MENU
-========================= */
-header { position: fixed; width: 100%; top: 0; left: 0; background-color: #ffffffee; backdrop-filter: blur(6px); border-bottom: 1px solid #ddd; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
-nav { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
-nav .logo { font-weight: 700; font-size: 1.4rem; color: #ff6600; }
-nav .menu { list-style: none; display: flex; gap: 1.5rem; }
-nav .menu li a { font-weight: 500; transition: color 0.3s; }
-nav .menu li a:hover { color: #e55b00; }
+        /* =========================
+           MENU
+        ========================= */
+        header { position: fixed; width: 100%; top: 0; left: 0; background-color: #ffffffee; backdrop-filter: blur(6px); border-bottom: 1px solid #ddd; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+        nav { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        nav .logo { font-weight: 700; font-size: 1.4rem; color: #ff6600; }
+        nav .menu { list-style: none; display: flex; gap: 1.5rem; }
+        nav .menu li a { font-weight: 500; transition: color 0.3s; }
+        nav .menu li a:hover { color: #ff6600; }
 
-/* =========================
-   SEÇÕES
-========================= */
-section { padding: 100px 20px 60px 20px; max-width: 1200px; margin: auto; }
-#sobre h1 { font-size: 2rem; color: #ff6600; margin-bottom: 1rem; }
-#sobre p { font-size: 1.1rem; max-width: 800px; }
+        /* =========================
+           SEÇÕES
+        ========================= */
+        section { padding: 100px 20px 60px 20px; max-width: 1200px; margin: auto; }
+        #sobre h1 { font-size: 2rem; color: #ff6600; margin-bottom: 1rem; }
+        #sobre p { font-size: 1.1rem; max-width: 900px; margin-bottom: 1rem; }
+        #sobre p + p { margin-top: 0.5rem; }
 
-/* =========================
-   PROJETOS
-========================= */
-.projetos-container { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
-.projeto { background-color: #fff; padding: 1.5rem; border-radius: 12px; width: 300px; box-shadow: 0 6px 15px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; text-align: center; }
-.projeto:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-.projeto h3 { color: #ff6600; margin-bottom: 0.5rem; }
-.projeto p { margin-bottom: 1rem; color: #555; font-style: italic; }
-.projeto a { display: inline-block; padding: 0.5rem 1rem; background-color: #ff6600; color: #fff; border-radius: 6px; font-weight: 500; transition: background-color 0.3s; }
-.projeto a:hover { background-color: #e55b00; }
+        /* =========================
+           PROJETOS
+        ========================= */
+        .projetos-container { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
+        .projeto { background-color: #fff; padding: 1.5rem; border-radius: 12px; width: 300px; box-shadow: 0 6px 15px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; text-align: center; }
+        .projeto:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .projeto h3 { color: #ff6600; margin-bottom: 0.5rem; }
+        .projeto p { margin-bottom: 1rem; color: #555; }
+        .projeto a { display: inline-block; padding: 0.5rem 1rem; background-color: #ff6600; color: #fff; border-radius: 6px; font-weight: 500; transition: background-color 0.3s; }
+        .projeto a:hover { background-color: #e55b00; }
 
-/* =========================
-   CONTATO
-========================= */
-#contato form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem; }
-#contato input, #contato textarea { padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; }
-#contato button { padding: 0.8rem; border: none; background-color: #ff6600; color: #fff; font-weight: 600; border-radius: 6px; cursor: pointer; transition: background-color 0.3s; }
-#contato button:hover { background-color: #e55b00; }
-#mensagem-confirmacao { margin-top: 1rem; padding: 1rem; background-color: #e6ffed; border: 1px solid #a0d5a0; border-radius: 6px; text-align: center; }
-.hidden { display: none; }
+        /* =========================
+           CONTATO
+        ========================= */
+        #contato form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem; }
+        #contato input, #contato textarea { padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; }
+        #contato button { padding: 0.8rem; border: none; background-color: #ff6600; color: #fff; font-weight: 600; border-radius: 6px; cursor: pointer; transition: background-color 0.3s; }
+        #contato button:hover { background-color: #e55b00; }
+        #mensagem-confirmacao { margin-top: 1rem; padding: 1rem; background-color: #e6ffed; border: 1px solid #a0d5a0; border-radius: 6px; text-align: center; }
+        .hidden { display: none; }
 
-/* =========================
-   RODAPÉ
-========================= */
-footer { background-color: #f7f7f7; text-align: center; padding: 1rem 2rem; border-top: 1px solid #ddd; margin-top: 2rem; font-size: 0.9rem; color: #777; }
+        /* =========================
+           RODAPÉ
+        ========================= */
+        footer { background-color: #f7f7f7; text-align: center; padding: 1rem 2rem; border-top: 1px solid #ddd; margin-top: 2rem; font-size: 0.9rem; color: #777; }
 
-/* =========================
-   RESPONSIVO
-========================= */
-@media (max-width: 768px) {
-    nav .menu { flex-direction: column; gap: 1rem; }
-    .projetos-container { flex-direction: column; align-items: center; }
-}
+        /* =========================
+           RESPONSIVO
+        ========================= */
+        @media (max-width: 768px) {
+            nav .menu { flex-direction: column; gap: 1rem; }
+            .projetos-container { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- MENU -->
+    <header>
+        <nav>
+            <div class="logo">Tsichero</div>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* =========================
-   BOTÕES DE PROJETO
-========================= */
-/* Todos os projetos exibem "Em desenvolvimento / Sigilo" */
-.projeto a::after {
-    content: " 🔒 Em desenvolvimento";
-    font-size: 0.85rem;
-    margin-left: 5px;
-    font-style: italic;
-}
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre">
+        <h1>Olá, sou Tsichero!</h1>
+        <p>Sou Médica Veterinária em transição de carreira, com MBA em Inteligência Artificial para Negócios e atualmente cursando Ciência de Dados.</p>
+        <p>Apaixonada por Inteligência Artificial, Machine Learning, Deep Learning, NLP e Chatbots, busco unir tecnologia, estratégia e inovação para gerar impacto real por meio de dados.</p>
+        <p>Tenho experiência prática em Python, SQL, Power BI e Microsoft Azure, atuando em projetos de automação, análise de dados complexos e criação de modelos preditivos voltados à eficiência e à tomada de decisões inteligentes. Também realizo mentoria e consultoria em IA, contribuindo para a aplicação prática e ética de tecnologias emergentes em diferentes contextos.</p>
+        <p>📊 Em constante aprendizado e evolução, estou aberta a colaborações e oportunidades nas áreas de Data Science, Automação e Inteligência Artificial aplicada aos negócios.</p>
+        <p>🔗 Confira meu portfólio de projetos: <a href="https://github.com/tsichero" target="_blank">github.com/tsichero</a></p>
+
+        <hr style="margin:2rem 0; border:0; border-top:1px solid #ddd;">
+
+        <p>I am a Veterinarian transitioning into Data and AI, with an MBA in Artificial Intelligence for Business and currently studying Data Science.</p>
+        <p>Passionate about Artificial Intelligence, Machine Learning, Deep Learning, NLP, and Chatbots, I aim to connect technology, strategy, and innovation to create real impact through data.</p>
+        <p>I have hands-on experience with Python, SQL, Power BI, and Microsoft Azure, working on automation, complex data analysis, and predictive modeling projects focused on intelligent and efficient decision-making. I also provide AI mentoring and consulting, supporting the practical and ethical adoption of emerging technologies.</p>
+        <p>📊 Always learning and evolving, I’m open to collaborations and opportunities in Data Science, Automation, and AI for Business Innovation.</p>
+        <p>🔗 Portfolio: <a href="https://github.com/tsichero" target="_blank">github.com/tsichero</a></p>
+    </section>
+
+    <!-- SEÇÃO PROJETOS -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto">
+                <h3>Projeto 1</h3>
+                <p>Em desenvolvimento — sigilo</p>
+                <a href="#">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 2</h3>
+                <p>Em desenvolvimento — sigilo</p>
+                <a href="#">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 3</h3>
+                <p>Em desenvolvimento — sigilo</p>
+                <a href="#">Ver projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensagem-confirmacao" class="hidden">
+            <p>Obrigado! Sua mensagem foi enviada com sucesso.</p>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 Tainã Sichero Dulcetti. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Script para formulário
+        const form = document.getElementById('form-contato');
+        const mensagemConf = document.getElementById('mensagem-confirmacao');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            form.reset();
+            mensagemConf.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
