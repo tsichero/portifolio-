@@ -7,48 +7,96 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
     }
 
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
+    }
+
+    /* HEADER */
+    .header {
       text-align: center;
-    }
-
-    h1, h2 {
-      color: #38bdf8;
-    }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    .section {
-      margin-top: 40px;
-      text-align: left;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 15px;
+      margin-bottom: 50px;
     }
 
     .profile-img {
-      width: 160px;
-      height: 160px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #38bdf8;
+      box-shadow: 0 0 25px rgba(56,189,248,0.4);
       margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 10px 0;
+      color: #38bdf8;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 15px;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-top: 50px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .card {
+      background: #111827;
+      padding: 20px;
+      border-radius: 14px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(56,189,248,0.3);
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      margin-top: 10px;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #0b1120;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
     }
   </style>
 </head>
@@ -57,29 +105,33 @@
 
 <div class="container">
 
-  <!-- FOTO -->
-  <img src="./perfil.jpeg" alt="Tainã Sichero Dulcetti" class="profile-img">
+  <!-- HEADER -->
+  <div class="header">
+    <img src="./profile.jpeg" alt="Tainã Sichero Dulcetti" class="profile-img">
 
-  <!-- NOME -->
-  <h1>👋 Olá, sou Tainã Sichero Dulcetti</h1>
-  <p><strong>Especialista em IA | IA Generativa • RAG • NLP | Azure</strong></p>
+    <h1>Tainã Sichero Dulcetti</h1>
+    <p class="subtitle">
+      AI Specialist • Generative AI • RAG • NLP • Azure
+    </p>
+  </div>
 
   <!-- INTRO -->
   <div class="section">
     <p>
-      Desenvolvo soluções inteligentes que transformam dados em decisões estratégicas, com foco em IA aplicada, automação e inovação.
+      Desenvolvo soluções com Inteligência Artificial focadas em automação, análise de dados e construção de sistemas inteligentes aplicáveis ao mundo real. 
+      Atuo de ponta a ponta — da estratégia à implementação.
     </p>
   </div>
 
   <!-- O QUE FAZ -->
   <div class="section">
-    <h2>🚀 O que eu faço</h2>
+    <h2>🚀 Atuação</h2>
     <ul>
-      <li>Criação de sistemas com IA generativa (LLMs e RAG)</li>
-      <li>Automação de processos inteligentes</li>
-      <li>Análise de dados e geração de insights</li>
-      <li>Aplicações com NLP e Visão Computacional</li>
-      <li>Soluções completas end-to-end</li>
+      <li>LLMs e sistemas com RAG</li>
+      <li>Automação inteligente de processos</li>
+      <li>Análise de dados e insights estratégicos</li>
+      <li>NLP e Visão Computacional</li>
+      <li>Soluções end-to-end em IA</li>
     </ul>
   </div>
 
@@ -88,42 +140,30 @@
     <h2>🧠 Projetos</h2>
 
     <div class="card">
-      <h3>Chatbot de IA para Medicina Veterinária</h3>
-      <p>Chatbot inteligente com respostas contextualizadas utilizando arquitetura em Azure e LLMs.</p>
-      <p><strong>Tecnologias:</strong> Python, Azure, NLP</p>
+      <strong>Chatbot de IA para Veterinária</strong>
+      <p>Chatbot com respostas contextualizadas utilizando LLMs e arquitetura Azure.</p>
     </div>
 
     <div class="card">
-      <h3>Análise de Dados do YouTube</h3>
-      <p>Projeto focado em coleta e análise de dados via API para geração de insights estratégicos.</p>
-      <p><strong>Tecnologias:</strong> Python, APIs</p>
+      <strong>Análise de Dados (YouTube)</strong>
+      <p>Pipeline de coleta e análise de dados via API para geração de insights.</p>
     </div>
 
     <div class="card">
-      <h3>Visão Computacional aplicada à Saúde</h3>
-      <p>Processamento de imagens com IA para identificação de padrões e apoio à tomada de decisão.</p>
-      <p><strong>Tecnologias:</strong> OpenCV, Python</p>
+      <strong>Visão Computacional em Saúde</strong>
+      <p>Processamento de imagens com IA para identificação de padrões.</p>
     </div>
 
-  </div>
-
-  <!-- SKILLS -->
-  <div class="section">
-    <h2>🧩 Skills</h2>
-    <p>Machine Learning • LLMs • RAG • NLP • Visão Computacional</p>
-    <p>Python • SQL • Power BI • Azure</p>
   </div>
 
   <!-- CONTATO -->
-  <div class="section">
+  <div class="contact">
     <h2>📩 Contato</h2>
-    <p>Aberta a oportunidades e projetos em Inteligência Artificial.</p>
-    <p>Email: mmbjjs@gmail.com</p>
-  </div>
+    <p>Aberta a projetos e oportunidades em IA</p>
 
-  <!-- GITHUB -->
-  <div class="section">
-    <h2>🔗 Portfólio</h2>
+    <a href="mailto:mmbjjs@gmail.com" class="btn">Entrar em contato</a>
+    <br><br>
+
     <a href="https://github.com/tsichero" target="_blank">
       github.com/tsichero
     </a>
