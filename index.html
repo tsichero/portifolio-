@@ -9,70 +9,119 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0b1120;
+      background: radial-gradient(circle at top, #0f172a, #020617);
       color: #e5e7eb;
+      overflow-x: hidden;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 80px 20px;
     }
 
+    /* ANIMAÇÃO */
+    .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* HEADER */
     .header {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
     .profile-img {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #38bdf8;
-      box-shadow: 0 0 25px rgba(56,189,248,0.4);
+      box-shadow: 0 0 40px rgba(56,189,248,0.5);
       margin-bottom: 20px;
     }
 
     h1 {
+      font-size: 32px;
       color: #38bdf8;
       margin: 10px 0;
     }
 
     .subtitle {
       color: #94a3b8;
+      font-size: 16px;
     }
 
+    /* HERO */
+    .hero {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    /* BOTÕES */
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(56,189,248,0.6);
+    }
+
+    /* SECTIONS */
     .section {
-      margin-top: 50px;
+      margin-top: 70px;
     }
 
     .section h2 {
       color: #38bdf8;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .card {
-      background: #111827;
+      background: rgba(17,24,39,0.8);
+      backdrop-filter: blur(10px);
       padding: 20px;
-      border-radius: 14px;
+      border-radius: 16px;
       margin-bottom: 15px;
       border: 1px solid rgba(255,255,255,0.05);
+      transition: 0.3s;
     }
 
-    .contact {
-      text-align: center;
-      margin-top: 50px;
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(56,189,248,0.4);
     }
 
-    .btn {
-      display: inline-block;
-      padding: 10px 18px;
-      border-radius: 8px;
-      background: #38bdf8;
-      color: #0b1120;
-      text-decoration: none;
-      font-weight: bold;
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 15px;
     }
 
     a {
@@ -87,114 +136,93 @@
 <div class="container">
 
   <!-- HEADER -->
-  <div class="header">
-    <img src="./profile.jpeg" alt="Tainã Sichero Dulcetti" class="profile-img">
+  <div class="header fade">
+    <img src="./profile.jpeg" class="profile-img">
     <h1>Tainã Sichero Dulcetti</h1>
-    <p class="subtitle">
-      AI Specialist • GenAI • RAG • Data Science • Azure • Automation
-    </p>
+    <p class="subtitle">AI Specialist • GenAI • RAG • Data Science • Azure</p>
   </div>
 
-  <!-- INTRO -->
-  <div class="section">
+  <!-- HERO -->
+  <div class="hero fade">
     <p>
-      Sou Especialista em Inteligência Artificial, com MBA em IA para Negócios e formação em Ciência de Dados, atuando na construção de soluções inteligentes aplicadas ao mundo real.
+      Construo sistemas de Inteligência Artificial que transformam dados em decisões estratégicas e soluções escaláveis.
+      Atuo com IA Generativa, automação e análise de dados para gerar impacto real em negócios.
     </p>
 
-    <p>
-      Transformo dados e tecnologia em sistemas de impacto, unindo estratégia, automação e inteligência artificial para gerar valor e escalabilidade.
-    </p>
+    <br>
+
+    <a href="https://wa.me/5511988419090" target="_blank" class="btn">💬 Falar sobre projeto</a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmbjjs@gmail.com" target="_blank" class="btn">💼 Contato profissional</a>
   </div>
 
   <!-- EXPERIÊNCIA -->
-  <div class="section">
-    <h2>⚡ Experiência em IA & Data</h2>
+  <div class="section fade">
+    <h2>⚡ Experiência</h2>
 
     <div class="card">
-      <p>
-        Atuo com Inteligência Artificial Generativa, LLMs, RAG e frameworks como LangChain, desenvolvendo soluções end-to-end.
-      </p>
-
-      <p>
-        Chatbot inteligente para Medicina Veterinária com arquitetura em Azure, focado em respostas contextualizadas, automação de fluxos e evolução com RAG.
-      </p>
-
-      <p>
-        Projetos de visão computacional com Python e OpenCV para análise de imagens e apoio à decisão em saúde.
-      </p>
-
-      <p>
-        Análise de dados com APIs (YouTube), extração de métricas e geração de insights estratégicos.
-      </p>
-
-      <p>
-        Estruturação de dados para IA com evolução para pipelines e conceitos de Lakehouse.
-      </p>
-
-      <p>
-        Uso de copilotos e IA: ChatGPT, Gemini, Claude e NotebookLM para construção de soluções inteligentes.
-      </p>
-
-      <p>
-        Automação de processos com n8n, ManyChat e Power BI.
-      </p>
-
-      <p>
-        Consultoria em IA para negócios, com foco em automação, eficiência e escala.
-      </p>
+      IA Generativa (LLMs, RAG, LangChain) com desenvolvimento end-to-end de soluções inteligentes.
     </div>
+
+    <div class="card">
+      Chatbot em Azure com respostas contextualizadas e automação de fluxos.
+    </div>
+
+    <div class="card">
+      Visão computacional com Python e OpenCV aplicada à saúde.
+    </div>
+
+    <div class="card">
+      Análise de dados com APIs e geração de insights estratégicos.
+    </div>
+
+    <div class="card">
+      Automação com n8n, ManyChat e Power BI.
+    </div>
+
+    <div class="card">
+      Uso de copilotos: ChatGPT, Gemini, Claude e NotebookLM.
+    </div>
+
   </div>
 
   <!-- PROJETOS -->
-  <div class="section">
+  <div class="section fade">
     <h2>🧠 Projetos</h2>
 
-    <div class="card">
-      <strong>Chatbot IA Veterinária</strong>
-      <p>LLMs + Azure + RAG • Automação de fluxos • Respostas inteligentes</p>
-    </div>
+    <div class="grid">
 
-    <div class="card">
-      <strong>Análise de Dados (YouTube/API)</strong>
-      <p>Métricas • Insights • Comportamento de audiência</p>
-    </div>
+      <div class="card">
+        <strong>Chatbot IA Veterinária</strong>
+        <p>LLMs + Azure + RAG</p>
+      </div>
 
-    <div class="card">
-      <strong>Visão Computacional em Saúde</strong>
-      <p>OpenCV • Processamento de imagens • Padrões clínicos</p>
-    </div>
+      <div class="card">
+        <strong>Data Analytics</strong>
+        <p>APIs • Insights • Métricas</p>
+      </div>
 
+      <div class="card">
+        <strong>Visão Computacional</strong>
+        <p>OpenCV • Imagens • Padrões</p>
+      </div>
+
+    </div>
   </div>
 
   <!-- SKILLS -->
-  <div class="section">
+  <div class="section fade">
     <h2>🧩 Skills</h2>
-    <p>LLMs • RAG • NLP • Machine Learning • Visão Computacional</p>
     <p>Python • SQL • Power BI • Azure • n8n • ManyChat</p>
-    <p>ChatGPT • Gemini • Claude • NotebookLM</p>
+    <p>LLMs • RAG • NLP • Machine Learning • CV</p>
   </div>
 
   <!-- CONTATO -->
-  <div class="contact">
+  <div class="section fade" style="text-align:center;">
     <h2>📩 Contato</h2>
-    <p>Aberta a oportunidades em IA, Dados e Automação</p>
 
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmbjjs@gmail.com" target="_blank" class="btn">
-      💼 E-mail
-    </a>
-
-    <br><br>
-
-    <a href="https://wa.me/5511988419090" target="_blank" class="btn">
-      💬 WhatsApp
-    </a>
-
-    <br><br>
-
-    <a href="https://www.linkedin.com/in/tainã-sichero-dulcetti-65270b149" target="_blank" class="btn">
-      🔗 LinkedIn
-    </a>
-
+    <a href="https://wa.me/5511988419090" target="_blank" class="btn">💬 WhatsApp</a>
+    <a href="https://www.linkedin.com/in/tainã-sichero-dulcetti-65270b149" target="_blank" class="btn">🔗 LinkedIn</a>
+    <a href="https://github.com/tsichero" target="_blank" class="btn">💻 GitHub</a>
   </div>
 
 </div>
