@@ -2,82 +2,48 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Tainã Sichero Dulcetti | AI Specialist</title>
+  <title>Aurora AI Solutions | Tainã Sichero</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: radial-gradient(circle at top, #0f172a, #020617);
+      background: #020617;
       color: #e5e7eb;
-      overflow-x: hidden;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 80px 20px;
     }
 
-    /* ANIMAÇÃO */
-    .fade {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s ease forwards;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* HEADER */
-    .header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #38bdf8;
-      box-shadow: 0 0 40px rgba(56,189,248,0.5);
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 32px;
+    h1, h2 {
       color: #38bdf8;
-      margin: 10px 0;
-    }
-
-    .subtitle {
-      color: #94a3b8;
-      font-size: 16px;
     }
 
     /* HERO */
     .hero {
       text-align: center;
-      margin-top: 30px;
+      margin-bottom: 80px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
     }
 
     .hero p {
       font-size: 18px;
+      color: #94a3b8;
       max-width: 700px;
       margin: auto;
-      line-height: 1.6;
     }
 
-    /* BOTÕES */
     .btn {
       display: inline-block;
-      margin: 10px;
+      margin: 15px 10px;
       padding: 12px 22px;
       border-radius: 10px;
       background: #38bdf8;
@@ -92,36 +58,42 @@
       box-shadow: 0 0 15px rgba(56,189,248,0.6);
     }
 
-    /* SECTIONS */
+    /* SEÇÕES */
     .section {
       margin-top: 70px;
     }
 
-    .section h2 {
-      color: #38bdf8;
-      margin-bottom: 20px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap: 20px;
     }
 
     .card {
-      background: rgba(17,24,39,0.8);
-      backdrop-filter: blur(10px);
+      background: #0f172a;
       padding: 20px;
-      border-radius: 16px;
-      margin-bottom: 15px;
+      border-radius: 14px;
       border: 1px solid rgba(255,255,255,0.05);
       transition: 0.3s;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      border-color: rgba(56,189,248,0.4);
+      border-color: #38bdf8;
     }
 
-    /* GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-      gap: 15px;
+    /* FOTO */
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+      object-fit: cover;
     }
 
     a {
@@ -135,90 +107,89 @@
 
 <div class="container">
 
-  <!-- HEADER -->
-  <div class="header fade">
-    <img src="./profile.jpeg" class="profile-img">
-    <h1>Tainã Sichero Dulcetti</h1>
-    <p class="subtitle">AI Specialist • GenAI • RAG • Data Science • Azure</p>
-  </div>
-
   <!-- HERO -->
-  <div class="hero fade">
+  <div class="hero">
+    <h1>🚀 Aurora AI Solutions</h1>
     <p>
-      Construo sistemas de Inteligência Artificial que transformam dados em decisões estratégicas e soluções escaláveis.
-      Atuo com IA Generativa, automação e análise de dados para gerar impacto real em negócios.
+      Desenvolvemos soluções com Inteligência Artificial para automatizar processos, gerar insights e escalar decisões estratégicas.
     </p>
 
-    <br>
-
-    <a href="https://wa.me/5511988419090" target="_blank" class="btn">💬 Falar sobre projeto</a>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmbjjs@gmail.com" target="_blank" class="btn">💼 Contato profissional</a>
+    <a href="https://wa.me/5511988419090" target="_blank" class="btn">💬 Falar com especialista</a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmbjjs@gmail.com" target="_blank" class="btn">📩 Contato corporativo</a>
   </div>
 
-  <!-- EXPERIÊNCIA -->
-  <div class="section fade">
-    <h2>⚡ Experiência</h2>
+  <!-- PERFIL -->
+  <div class="profile">
+    <img src="./profile.jpeg">
+    <h2>Tainã Sichero Dulcetti</h2>
+    <p>Especialista em IA • Data Science • Azure • Automação</p>
+  </div>
 
-    <div class="card">
-      IA Generativa (LLMs, RAG, LangChain) com desenvolvimento end-to-end de soluções inteligentes.
+  <!-- SOLUÇÕES -->
+  <div class="section">
+    <h2>💡 Soluções</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <strong>IA Generativa & Chatbots</strong>
+        <p>LLMs, RAG e automação de atendimento inteligente.</p>
+      </div>
+
+      <div class="card">
+        <strong>Automação Inteligente</strong>
+        <p>n8n, ManyChat e fluxos automatizados para escala.</p>
+      </div>
+
+      <div class="card">
+        <strong>Data Analytics</strong>
+        <p>Análise de dados, APIs e insights estratégicos.</p>
+      </div>
+
+      <div class="card">
+        <strong>Visão Computacional</strong>
+        <p>Processamento de imagens com IA para tomada de decisão.</p>
+      </div>
+
     </div>
+  </div>
 
-    <div class="card">
-      Chatbot em Azure com respostas contextualizadas e automação de fluxos.
-    </div>
-
-    <div class="card">
-      Visão computacional com Python e OpenCV aplicada à saúde.
-    </div>
-
-    <div class="card">
-      Análise de dados com APIs e geração de insights estratégicos.
-    </div>
-
-    <div class="card">
-      Automação com n8n, ManyChat e Power BI.
-    </div>
-
-    <div class="card">
-      Uso de copilotos: ChatGPT, Gemini, Claude e NotebookLM.
-    </div>
-
+  <!-- TECNOLOGIAS -->
+  <div class="section">
+    <h2>🧩 Tecnologias</h2>
+    <p>
+      Python • SQL • Power BI • Azure • LangChain • LLMs • RAG • NLP • OpenCV • n8n • ManyChat  
+      ChatGPT • Gemini • Claude • NotebookLM
+    </p>
   </div>
 
   <!-- PROJETOS -->
-  <div class="section fade">
+  <div class="section">
     <h2>🧠 Projetos</h2>
 
     <div class="grid">
 
       <div class="card">
         <strong>Chatbot IA Veterinária</strong>
-        <p>LLMs + Azure + RAG</p>
+        <p>Arquitetura Azure • RAG • Respostas inteligentes</p>
       </div>
 
       <div class="card">
-        <strong>Data Analytics</strong>
-        <p>APIs • Insights • Métricas</p>
+        <strong>Análise de Dados YouTube</strong>
+        <p>Coleta via API • Insights • Estratégia de conteúdo</p>
       </div>
 
       <div class="card">
-        <strong>Visão Computacional</strong>
-        <p>OpenCV • Imagens • Padrões</p>
+        <strong>Visão Computacional em Saúde</strong>
+        <p>OpenCV • Identificação de padrões</p>
       </div>
 
     </div>
   </div>
 
-  <!-- SKILLS -->
-  <div class="section fade">
-    <h2>🧩 Skills</h2>
-    <p>Python • SQL • Power BI • Azure • n8n • ManyChat</p>
-    <p>LLMs • RAG • NLP • Machine Learning • CV</p>
-  </div>
-
-  <!-- CONTATO -->
-  <div class="section fade" style="text-align:center;">
-    <h2>📩 Contato</h2>
+  <!-- CTA FINAL -->
+  <div class="section" style="text-align:center;">
+    <h2>📩 Vamos construir sua solução de IA?</h2>
 
     <a href="https://wa.me/5511988419090" target="_blank" class="btn">💬 WhatsApp</a>
     <a href="https://www.linkedin.com/in/tainã-sichero-dulcetti-65270b149" target="_blank" class="btn">🔗 LinkedIn</a>
