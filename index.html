@@ -2,63 +2,82 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Tainã Sichero Dulcetti | AI Engineer</title>
+  <title>Tainã Sichero Dulcetti | AI Specialist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
     }
 
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-    }
-
-    p {
-      margin: 8px 0;
+      padding: 60px 20px;
     }
 
     .header {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
+      text-align: center;
+      margin-bottom: 50px;
     }
 
     .profile-img {
-      width: 100px;
-      height: 100px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 25px rgba(56,189,248,0.4);
+      margin-bottom: 20px;
     }
 
-    ul {
-      padding-left: 18px;
+    h1 {
+      color: #38bdf8;
+      margin: 10px 0;
     }
 
-    .links a {
-      margin-right: 10px;
+    .subtitle {
+      color: #94a3b8;
+    }
+
+    .section {
+      margin-top: 50px;
+    }
+
+    .section h2 {
+      color: #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 20px;
+      border-radius: 14px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #0b1120;
       text-decoration: none;
-      color: #0073b1;
+      font-weight: bold;
     }
 
-    .highlight {
-      font-weight: bold;
+    a {
+      color: #38bdf8;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -69,101 +88,114 @@
 
   <!-- HEADER -->
   <div class="header">
-    <img src="./profile.jpeg" class="profile-img">
+    <img src="./profile.jpeg" alt="Tainã Sichero Dulcetti" class="profile-img">
+    <h1>Tainã Sichero Dulcetti</h1>
+    <p class="subtitle">
+      AI Specialist • GenAI • RAG • Data Science • Azure • Automation
+    </p>
+  </div>
 
-    <div>
-      <h1>Tainã Sichero Dulcetti</h1>
-      <p>AI Engineer | Data Science | Generative AI | Backend (FastAPI)</p>
-      <p>São Paulo, Brazil</p>
+  <!-- INTRO -->
+  <div class="section">
+    <p>
+      Sou Especialista em Inteligência Artificial, com MBA em IA para Negócios e formação em Ciência de Dados, atuando na construção de soluções inteligentes aplicadas ao mundo real.
+    </p>
 
-      <div class="links">
-        <a href="https://www.linkedin.com/in/tainã-sichero-dulcetti-65270b149" target="_blank">LinkedIn</a>
-        <a href="https://github.com/tsichero" target="_blank">GitHub</a>
-        <a href="mailto:mmbjjs@gmail.com">Email</a>
-      </div>
+    <p>
+      Transformo dados e tecnologia em sistemas de impacto, unindo estratégia, automação e inteligência artificial para gerar valor e escalabilidade.
+    </p>
+  </div>
+
+  <!-- EXPERIÊNCIA -->
+  <div class="section">
+    <h2>⚡ Experiência em IA & Data</h2>
+
+    <div class="card">
+      <p>
+        Atuo com Inteligência Artificial Generativa, LLMs, RAG e frameworks como LangChain, desenvolvendo soluções end-to-end.
+      </p>
+
+      <p>
+        Chatbot inteligente para Medicina Veterinária com arquitetura em Azure, focado em respostas contextualizadas, automação de fluxos e evolução com RAG.
+      </p>
+
+      <p>
+        Projetos de visão computacional com Python e OpenCV para análise de imagens e apoio à decisão em saúde.
+      </p>
+
+      <p>
+        Análise de dados com APIs (YouTube), extração de métricas e geração de insights estratégicos.
+      </p>
+
+      <p>
+        Estruturação de dados para IA com evolução para pipelines e conceitos de Lakehouse.
+      </p>
+
+      <p>
+        Uso de copilotos e IA: ChatGPT, Gemini, Claude e NotebookLM para construção de soluções inteligentes.
+      </p>
+
+      <p>
+        Automação de processos com n8n, ManyChat e Power BI.
+      </p>
+
+      <p>
+        Consultoria em IA para negócios, com foco em automação, eficiência e escala.
+      </p>
     </div>
   </div>
 
-  <!-- SUMMARY -->
-  <h2>Summary</h2>
-  <p>
-    AI Engineer with hands-on experience building production-oriented solutions using LLMs, FastAPI, Docker, and Microsoft Azure.
-  </p>
-  <p>
-    Strong background in Generative AI, NLP, and scalable system design. Experience delivering end-to-end AI solutions, from data structuring to deployment.
-  </p>
-  <p class="highlight">
-    Achieved +1M growth using AI-driven strategies and data-based decision-making.
-  </p>
+  <!-- PROJETOS -->
+  <div class="section">
+    <h2>🧠 Projetos</h2>
+
+    <div class="card">
+      <strong>Chatbot IA Veterinária</strong>
+      <p>LLMs + Azure + RAG • Automação de fluxos • Respostas inteligentes</p>
+    </div>
+
+    <div class="card">
+      <strong>Análise de Dados (YouTube/API)</strong>
+      <p>Métricas • Insights • Comportamento de audiência</p>
+    </div>
+
+    <div class="card">
+      <strong>Visão Computacional em Saúde</strong>
+      <p>OpenCV • Processamento de imagens • Padrões clínicos</p>
+    </div>
+
+  </div>
 
   <!-- SKILLS -->
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>Languages:</strong> Python, SQL</li>
-    <li><strong>AI/ML:</strong> LLMs, RAG, NLP, Computer Vision</li>
-    <li><strong>Frameworks:</strong> FastAPI</li>
-    <li><strong>Cloud:</strong> Microsoft Azure</li>
-    <li><strong>Tools:</strong> Docker, Power BI, n8n</li>
-    <li><strong>GenAI:</strong> ChatGPT, Gemini, Claude, NotebookLM</li>
-  </ul>
+  <div class="section">
+    <h2>🧩 Skills</h2>
+    <p>LLMs • RAG • NLP • Machine Learning • Visão Computacional</p>
+    <p>Python • SQL • Power BI • Azure • n8n • ManyChat</p>
+    <p>ChatGPT • Gemini • Claude • NotebookLM</p>
+  </div>
 
-  <!-- EXPERIENCE -->
-  <h2>Experience</h2>
+  <!-- CONTATO -->
+  <div class="contact">
+    <h2>📩 Contato</h2>
+    <p>Aberta a oportunidades em IA, Dados e Automação</p>
 
-  <p><strong>AI Consultant & Project Lead</strong> — Freelance | 2024–Present</p>
-  <ul>
-    <li>Designed and implemented AI-driven solutions for automation and decision support</li>
-    <li>Built REST APIs using FastAPI for AI applications</li>
-    <li>Deployed scalable systems on Microsoft Azure</li>
-    <li>Implemented secure data handling for sensitive applications</li>
-  </ul>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmbjjs@gmail.com" target="_blank" class="btn">
+      💼 E-mail
+    </a>
 
-  <p><strong>Growth Strategy (AI-driven)</strong></p>
-  <ul>
-    <li>Scaled digital presence from 20 to 1M+ users</li>
-    <li>Applied AI and automation to optimize engagement and reach</li>
-  </ul>
+    <br><br>
 
-  <!-- PROJECTS -->
-  <h2>Projects</h2>
+    <a href="https://wa.me/5511988419090" target="_blank" class="btn">
+      💬 WhatsApp
+    </a>
 
-  <p><strong>Veterinary AI Assistant</strong></p>
-  <ul>
-    <li>Built AI assistant using LLMs and FastAPI</li>
-    <li>Improved information retrieval and decision support</li>
-  </ul>
+    <br><br>
 
-  <p><strong>Computer Vision in Healthcare</strong></p>
-  <ul>
-    <li>Developed image processing pipeline using OpenCV</li>
-    <li>Extracted patterns for decision support</li>
-  </ul>
+    <a href="https://www.linkedin.com/in/tainã-sichero-dulcetti-65270b149" target="_blank" class="btn">
+      🔗 LinkedIn
+    </a>
 
-  <p><strong>Data Analytics (API-based)</strong></p>
-  <ul>
-    <li>Collected and analyzed data via APIs</li>
-    <li>Generated insights for strategic decisions</li>
-  </ul>
-
-  <p><strong>Email Automation System</strong></p>
-  <ul>
-    <li>Developed secure automation system in Python</li>
-    <li>Implemented templates and scheduling</li>
-  </ul>
-
-  <!-- EDUCATION -->
-  <h2>Education</h2>
-  <p>MBA in Artificial Intelligence for Business — EXAME</p>
-  <p>BSc in Data Science (in progress) — UNINOVE</p>
-  <p>DVM — FMU</p>
-
-  <!-- CERTIFICATIONS -->
-  <h2>Certifications</h2>
-  <ul>
-    <li>AWS Bedrock Specialist</li>
-    <li>Santander Bootcamp (n8n)</li>
-    <li>DIO Campus Expert</li>
-  </ul>
+  </div>
 
 </div>
 
