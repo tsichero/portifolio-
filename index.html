@@ -11,6 +11,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: #020617;
       color: #e5e7eb;
+      line-height: 1.6;
     }
 
     .container {
@@ -25,21 +26,22 @@
 
     .header {
       display: flex;
-      gap: 20px;
       align-items: center;
+      gap: 25px;
       flex-wrap: wrap;
+      margin-bottom: 40px;
     }
 
     .profile-img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      object-fit: cover;
       border: 3px solid #38bdf8;
+      object-fit: cover;
     }
 
     .info p {
-      margin: 4px 0;
+      margin: 5px 0;
       color: #94a3b8;
     }
 
@@ -55,18 +57,39 @@
       border: 1px solid rgba(255,255,255,0.05);
     }
 
-    ul {
-      padding-left: 18px;
-    }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
       gap: 15px;
     }
 
+    ul {
+      padding-left: 18px;
+    }
+
+    .highlight {
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
     a {
       color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 10px;
+      background: #38bdf8;
+      color: #020617;
+      font-weight: bold;
       text-decoration: none;
     }
   </style>
@@ -95,15 +118,27 @@
 
   <!-- RESUMO -->
   <div class="section">
-    <h2>🚀 Resumo Profissional</h2>
+    <h2>🚀 Quem sou eu</h2>
     <div class="card">
-      Especialista em Inteligência Artificial com atuação prática no desenvolvimento de aplicações baseadas em LLMs, integração backend (FastAPI), containerização (Docker) e deploy em Microsoft Azure. Experiência em arquitetura de soluções escaláveis, automação de processos e sistemas de alta confidencialidade na área da saúde.
+      Especialista em Inteligência Artificial com atuação prática no desenvolvimento de soluções com LLMs, APIs (FastAPI), Docker e Microsoft Azure.
       <br><br>
-      Consultora estratégica com histórico de crescimento exponencial (+1M de inscritos), unindo execução técnica com visão de produto e impacto de negócio.
+      Experiência em arquitetura de sistemas escaláveis, automação de processos e aplicações sensíveis na área da saúde.
+      <br><br>
+      <span class="highlight">+1 milhão de crescimento</span> com estratégias baseadas em dados e IA, unindo execução técnica com visão de negócio.
     </div>
   </div>
 
-  <!-- HARD SKILLS -->
+  <!-- DIFERENCIAL -->
+  <div class="section">
+    <h2>🔥 Diferencial</h2>
+    <div class="card">
+      Não atuo apenas com IA — eu conecto <span class="highlight">tecnologia + estratégia + execução</span>.
+      <br><br>
+      Meu foco é transformar IA em solução prática, escalável e aplicável ao mundo real.
+    </div>
+  </div>
+
+  <!-- SKILLS -->
   <div class="section">
     <h2>💻 Competências Técnicas</h2>
 
@@ -111,8 +146,8 @@
       <div class="card">
         <strong>IA & Dados</strong>
         <ul>
+          <li>LLMs</li>
           <li>Machine Learning</li>
-          <li>IA Generativa (LLMs)</li>
           <li>NLP</li>
           <li>Visão Computacional</li>
         </ul>
@@ -125,37 +160,28 @@
           <li>FastAPI</li>
           <li>APIs REST</li>
           <li>Docker</li>
-          <li>Microsoft Azure</li>
+          <li>Azure</li>
         </ul>
       </div>
 
       <div class="card">
-        <strong>IA Multimodal</strong>
+        <strong>Ferramentas IA</strong>
         <ul>
-          <li>ManyChat</li>
+          <li>ChatGPT</li>
           <li>Gemini</li>
-          <li>Leonardo AI</li>
-          <li>Runway</li>
-          <li>ElevenLabs</li>
+          <li>Claude</li>
+          <li>NotebookLM</li>
         </ul>
       </div>
 
       <div class="card">
-        <strong>Estratégia & Growth</strong>
+        <strong>Automação</strong>
         <ul>
-          <li>SEO</li>
-          <li>Growth Hacking</li>
-          <li>Automação</li>
+          <li>n8n</li>
+          <li>ManyChat</li>
+          <li>Power BI</li>
         </ul>
       </div>
-    </div>
-  </div>
-
-  <!-- SOFT SKILLS -->
-  <div class="section">
-    <h2>🧠 Competências Comportamentais</h2>
-    <div class="card">
-      Liderança técnica • Gestão de projetos • Pensamento estratégico • Comunicação clara • Autonomia • Visão orientada a produto • Capacidade analítica
     </div>
   </div>
 
@@ -164,21 +190,20 @@
     <h2>💼 Experiência</h2>
 
     <div class="card">
-      <strong>Especialista em IA | Consultora Estratégica</strong><br>
-      Autônoma / Freelance | 2024 – Atual
+      <strong>Consultora em IA & Projetos</strong>
       <ul>
-        <li>Consultoria em IA, automação e transformação digital</li>
-        <li>Desenvolvimento de APIs com FastAPI</li>
-        <li>Deploy em Microsoft Azure</li>
-        <li>Implementação de segurança de dados</li>
+        <li>Desenvolvimento de soluções com IA</li>
+        <li>Criação de APIs com FastAPI</li>
+        <li>Deploy em Azure</li>
+        <li>Automação de processos</li>
       </ul>
     </div>
 
     <div class="card">
-      <strong>Consultoria em Growth & Marketing</strong>
+      <strong>Growth & Estratégia</strong>
       <ul>
-        <li>Crescimento de 20 para +1M de inscritos</li>
-        <li>Gestão de audiência (54,5 mil seguidores)</li>
+        <li>+1 milhão de crescimento</li>
+        <li>Aplicação de IA em marketing</li>
       </ul>
     </div>
   </div>
@@ -188,23 +213,23 @@
     <h2>🧠 Projetos</h2>
 
     <div class="card">
-      <strong>Autoridade Digital em IA</strong>
-      <p>Stack multimodal com IA, imagem, vídeo e voz.</p>
+      <strong>Chatbot Inteligente Veterinário</strong>
+      <p>LLMs + Azure + automação de fluxos</p>
     </div>
 
     <div class="card">
-      <strong>Assistente Inteligente Veterinário</strong>
-      <p>FastAPI + LLM • Arquitetura modular • Alta eficiência clínica</p>
+      <strong>Visão Computacional em Saúde</strong>
+      <p>OpenCV + análise de imagens</p>
     </div>
 
     <div class="card">
-      <strong>Simulador Educacional em Saúde</strong>
-      <p>Simulação de exames com IA para ensino prático</p>
+      <strong>Análise de Dados</strong>
+      <p>APIs + insights estratégicos</p>
     </div>
 
     <div class="card">
       <strong>Automação de E-mails</strong>
-      <p>Python • Templates • Segurança avançada</p>
+      <p>Python + segurança + templates</p>
     </div>
   </div>
 
@@ -212,20 +237,18 @@
   <div class="section">
     <h2>🎓 Formação</h2>
 
-    <div class="card">MBA em Inteligência Artificial para Negócios — Faculdade EXAME (2024)</div>
-    <div class="card">Ciência de Dados — UNINOVE (em andamento)</div>
-    <div class="card">Medicina Veterinária — FMU (2019)</div>
+    <div class="card">MBA em IA para Negócios — EXAME</div>
+    <div class="card">Ciência de Dados — UNINOVE</div>
+    <div class="card">Medicina Veterinária — FMU</div>
   </div>
 
-  <!-- IDIOMAS -->
-  <div class="section">
-    <h2>🌍 Idiomas & Certificações</h2>
+  <!-- CTA -->
+  <div class="cta">
+    <h2>📩 Vamos trabalhar juntos?</h2>
 
-    <div class="card">
-      Inglês (Intermediário) • Espanhol (Intermediário) • Italiano (Básico)
-      <br><br>
-      Bootcamp Santander (n8n) • AWS Bedrock • DIO Campus Expert
-    </div>
+    <a href="https://wa.me/5511988419090" target="_blank" class="btn">💬 WhatsApp</a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmbjjs@gmail.com" target="_blank" class="btn">📩 E-mail</a>
+    <a href="https://www.linkedin.com/in/tainã-sichero-dulcetti-65270b149" target="_blank" class="btn">🔗 LinkedIn</a>
   </div>
 
 </div>
